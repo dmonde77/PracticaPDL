@@ -1,0 +1,77 @@
+ < palRes , 3 > // palRes: var
+ < palRes , 7 > // palRes: boolean
+ < ID , 0 > // identificador: resultado
+ < PUNTOYCOMA , - >
+ < palRes , 3 > // palRes: var
+ < palRes , 6 > // palRes: string
+ < ID , 1 > // identificador: cadena
+ < PUNTOYCOMA , - >
+ < ID , 1 > // identificador: cadena
+ < IGUAL , - >
+ < CADENA , "hola" >
+ < PUNTOYCOMA , - >
+ < palRes , 5 > // palRes: function
+ < palRes , 7 > // palRes: boolean
+ < ID , 2 > // identificador: cambio
+ < LPAREN , - >
+ < palRes , 7 > // palRes: boolean
+ < ID , 3 > // identificador: resul
+ < RPAREN , - >
+ < LBRACE , - >
+ < palRes , 3 > // palRes: var
+ < palRes , 4 > // palRes: int
+ < ID , 4 > // identificador: max
+ < PUNTOYCOMA , - >
+ < ID , 4 > // identificador: max
+ < IGUAL , - >
+ < INTEGER , 30 >
+ < PUNTOYCOMA , - >
+ < palRes , 3 > // palRes: var
+ < palRes , 4 > // palRes: int
+ < ID , 5 > // identificador: sum
+ < PUNTOYCOMA , - >
+ < ID , 5 > // identificador: sum
+ < IGUAL , - >
+ < INTEGER , 0 >
+ < PUNTOYCOMA , - >
+ < palRes , 8 > // palRes: if
+ < LPAREN , - >
+ < ID , 3 > // identificador: resul
+ < RPAREN , - >
+ < ID , 4 > // identificador: max
+ < IGUAL , - >
+ < ID , 4 > // identificador: max
+ < MAS , - >
+ < INTEGER , 1 >
+ < PUNTOYCOMA , - >
+ < palRes , 9 > // palRes: return
+ < ID , 3 > // identificador: resul
+ < PUNTOYCOMA , - >
+ < RBRACE , - >
+ < palRes , 5 > // palRes: function
+ < ID , 6 > // identificador: imprime
+ < LPAREN , - >
+ < palRes , 4 > // palRes: int
+ < ID , 7 > // identificador: v
+ < RPAREN , - >
+ < LBRACE , - >
+ < palRes , 3 > // palRes: var
+ < palRes , 4 > // palRes: int
+ < ID , 8 > // identificador: condicion
+ < PUNTOYCOMA , - >
+ < ID , 8 > // identificador: condicion
+ < IGUAL , - >
+ < INTEGER , 80 >
+ < PUNTOYCOMA , - >
+ < palRes , 8 > // palRes: if
+ < LPAREN , - >
+ < ID , 8 > // identificador: condicion
+ < MAYOR , - >
+ < ID , 7 > // identificador: v
+ < RPAREN , - >
+ < palRes , 2 > // palRes: print
+ < LPAREN , - >
+ < CADENA , "done" >
+ < RPAREN , - >
+ < PUNTOYCOMA , - >
+ < RBRACE , - >

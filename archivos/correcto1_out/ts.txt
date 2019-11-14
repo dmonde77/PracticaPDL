@@ -1,0 +1,10 @@
+Tabla de símbolos # 0 :
+	 * LEXEMA : 'resultado'
+	 * LEXEMA : 'cadena'
+	 * LEXEMA : 'cambio'
+	 * LEXEMA : 'resul'
+	 * LEXEMA : 'max'
+	 * LEXEMA : 'sum'
+	 * LEXEMA : 'imprime'
+	 * LEXEMA : 'v'
+	 * LEXEMA : 'condicion'

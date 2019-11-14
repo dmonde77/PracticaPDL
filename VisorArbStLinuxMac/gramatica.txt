@@ -1,0 +1,99 @@
+Terminales = {
+    BOOLEAN
+    CADENA
+    COMA
+    FALSE
+    FUNCTION
+    ID
+    IF
+    IGUAL
+    INPUT
+    INT
+    INTEGER
+    LBRACE
+    LPAREN
+    MAS
+    MAYOR
+    OR
+    ORIGUAL
+    PRINT
+    PUNTOYCOMA
+    RBRACE
+    RETURN
+    RPAREN
+    STRING
+    TRUE
+    VAR
+    WHILE
+    lambda
+}   
+
+NoTerminales = {
+    argumentos
+    argumentosExtra
+    argumentosLlamada
+    argumentosLlamadaExtra
+    asignacion
+    declaracionArgumentos
+    declaracionesYsentencias
+    erre
+    expresion
+    funcion
+    interiorFuncion
+    program
+    sentencia
+    sentenciaReturn
+    tipo
+    uu
+    uve
+}
+
+Axioma = program
+
+Producciones = {
+    program -> declaracionesYsentencias program
+    program -> funcion program
+    program -> lambda
+    declaracionesYsentencias -> VAR tipo ID PUNTOYCOMA
+    declaracionesYsentencias -> IF LPAREN expresion RPAREN sentencia
+    declaracionesYsentencias -> WHILE LPAREN expresion RPAREN LBRACE interiorFuncion RBRACE
+    declaracionesYsentencias -> sentencia
+    tipo -> INT
+    tipo -> STRING
+    tipo -> BOOLEAN
+    sentencia -> ID asignacion
+    sentencia -> RETURN sentenciaReturn PUNTOYCOMA
+    sentencia -> PRINT LPAREN expresion RPAREN PUNTOYCOMA
+    sentencia -> INPUT LPAREN ID RPAREN PUNTOYCOMA
+    sentencia -> ID LPAREN argumentosLlamada RPAREN PUNTOYCOMA
+    asignacion -> IGUAL expresion PUNTOYCOMA
+    asignacion -> ORIGUAL expresion PUNTOYCOMA
+    sentenciaReturn -> expresion
+    sentenciaReturn -> lambda
+    argumentosLlamada -> expresion argumentosLlamadaExtra
+    argumentosLlamada -> lambda
+    argumentosLlamadaExtra -> COMA expresion argumentosLlamadaExtra
+    argumentosLlamadaExtra -> lambda
+    funcion -> FUNCTION declaracionArgumentos ID LPAREN argumentos RPAREN LBRACE interiorFuncion RBRACE
+    declaracionArgumentos -> tipo
+    declaracionArgumentos -> lambda
+    interiorFuncion -> declaracionesYsentencias interiorFuncion
+    interiorFuncion -> lambda
+    argumentos -> tipo ID argumentosExtra
+    argumentos -> lambda
+    argumentosExtra -> COMA tipo ID argumentosExtra
+    argumentosExtra -> lambda
+    expresion -> expresion OR erre
+    expresion -> erre
+    erre -> erre MAYOR uu
+    erre -> uu
+    uu -> uu MAS uve
+    uu -> uve
+    uve -> ID
+    uve -> INTEGER
+    uve -> TRUE
+    uve -> FALSE
+    uve -> CADENA
+    uve -> ID LPAREN argumentosLlamada RPAREN
+    uve -> LPAREN expresion RPAREN
+}
