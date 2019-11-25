@@ -146,55 +146,55 @@ def p_argumentosExtra_fin(p):
     parsero.append("32")
 
 def p_expresion_or(p):
-    'expresion : expresion OR erre'
+    'expresion : expresion OR expresionMAYOR'
     parsero.append("33")
 
-def p_expresion_erre(p):
-    'expresion : erre'
+def p_expresion_or_mayor(p):
+    'expresion : expresionMAYOR'
     parsero.append("34")
 
-def p_erre_mayor(p):
-    'erre : erre MAYOR uu'
+def p_expresion_mayor(p):
+    'expresionMAYOR : expresionMAYOR MAYOR expresionMAS'
     parsero.append("35")
 
-def p_erre_uu(p):
-    'erre : uu'
+def p_expresion_mayor_mas(p):
+    'expresionMAYOR : expresionMAS'
     parsero.append("36")
 
-def p_uu_plus(p):
-    'uu : uu MAS uve'
+def p_expresion_mas(p):
+    'expresionMAS : expresionMAS MAS expresionLiteral'
     parsero.append("37")
 
-def p_uu_uve(p):
-    'uu : uve'
+def p_expresion_mas_literal(p):
+    'expresionMAS : expresionLiteral'
     parsero.append("38")
 
-def p_uve_id(p):
-    'uve : ID'
+def p_expresionLiteral_id(p):
+    'expresionLiteral : ID'
     parsero.append("39")
 
-def p_uve_integer(p):
-    'uve : INTEGER'
+def p_expresionLiteral_integer(p):
+    'expresionLiteral : INTEGER'
     parsero.append("40")
 
-def p_uve_true(p):
-    'uve : TRUE'
+def p_expresionLiteral_true(p):
+    'expresionLiteral : TRUE'
     parsero.append("41")
 
-def p_uve_false(p):
-    'uve : FALSE'
+def p_expresionLiteral_false(p):
+    'expresionLiteral : FALSE'
     parsero.append("42")
 
-def p_uve_cadena(p):
-    'uve : CADENA'
+def p_expresionLiteral_cadena(p):
+    'expresionLiteral : CADENA'
     parsero.append("43")
 
 def p_uve_funcion(p):
-    'uve : ID LPAREN argumentosLlamada RPAREN'
+    'expresionLiteral : ID LPAREN argumentosLlamada RPAREN'
     parsero.append("44")
 
 def p_uve_expresion(p):
-    'uve : LPAREN expresion RPAREN'
+    'expresionLiteral : LPAREN expresion RPAREN'
     parsero.append("45")
 
 parser = yacc.yacc()

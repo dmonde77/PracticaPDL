@@ -36,7 +36,7 @@ NoTerminales = {
     asignacion
     declaracionArgumentos
     declaracionesYsentencias
-    erre
+    expresionMAYOR
     expresion
     funcion
     interiorFuncion
@@ -44,8 +44,8 @@ NoTerminales = {
     sentencia
     sentenciaReturn
     tipo
-    uu
-    uve
+    expresionMAS
+    expresionLiteral
 }
 
 Axioma = program
@@ -83,17 +83,17 @@ Producciones = {
     argumentos -> lambda
     argumentosExtra -> COMA tipo ID argumentosExtra
     argumentosExtra -> lambda
-    expresion -> expresion OR erre
-    expresion -> erre
-    erre -> erre MAYOR uu
-    erre -> uu
-    uu -> uu MAS uve
-    uu -> uve
-    uve -> ID
-    uve -> INTEGER
-    uve -> TRUE
-    uve -> FALSE
-    uve -> CADENA
-    uve -> ID LPAREN argumentosLlamada RPAREN
-    uve -> LPAREN expresion RPAREN
+    expresion -> expresion OR expresionMAYOR
+    expresion -> expresionMAYOR
+    expresionMAYOR -> expresionMAYOR MAYOR expresionMAS
+    expresionMAYOR -> expresionMAS
+    expresionMAS -> expresionMAS MAS expresionLiteral
+    expresionMAS -> expresionLiteral
+    expresionLiteral -> ID
+    expresionLiteral -> INTEGER
+    expresionLiteral -> TRUE
+    expresionLiteral -> FALSE
+    expresionLiteral -> CADENA
+    expresionLiteral -> ID LPAREN argumentosLlamada RPAREN
+    expresionLiteral -> LPAREN expresion RPAREN
 }
