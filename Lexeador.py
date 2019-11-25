@@ -130,7 +130,7 @@ def tokeniza():
         else:
             tokenizado.append(" < {} , - >".format(tok.type))
 
-        # Token real
+        # Token tal cúal lo ve el analizador
         #print("REAL: < {} , {} >".format(tok.type, tok.value))
 
     return "\n".join(tokenizado)

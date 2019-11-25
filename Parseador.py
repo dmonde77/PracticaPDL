@@ -7,10 +7,11 @@ tokens = Lexeador.tokens
 # Lista de reglas
 parsero = [ "Ascendente" ]
 
+# Error sintáctico
 def p_error(p):
     if p:
-        print("Error de sintaxis en la línea {}: Token ({}, '{}') inesperado".format(p.lineno, p.type, p.value))
-        # exit(1);
+        print("Error de sintaxis en la línea {}: Token ({}, '{}') inesperado".format(p.lineno, p.type.lower(), p.value.lower()))
+        exit(1)
     else:
         print('Error de sintaxis: Se ha llegado al final del fichero')
 
@@ -121,15 +122,15 @@ def p_declaracionArgumentos_fin(p):
     parsero.append("26")
 
 def p_interiorFuncion(p):
-    'interiorFuncion   : declaracionesYsentencias interiorFuncion'
+    'interiorFuncion : declaracionesYsentencias interiorFuncion'
     parsero.append("27")
 
 def p_interiorFuncion_fin(p):
-    'interiorFuncion   :'
+    'interiorFuncion :'
     parsero.append("28")
 
 def p_argumentos(p):
-    'argumentos   : tipo ID argumentosExtra'
+    'argumentos : tipo ID argumentosExtra'
     parsero.append("29")
 
 def p_argumentos_fin(p):
@@ -189,14 +190,14 @@ def p_uve_cadena(p):
     parsero.append("43")
 
 def p_uve_funcion(p):
-    'uve  : ID LPAREN argumentosLlamada RPAREN'
+    'uve : ID LPAREN argumentosLlamada RPAREN'
     parsero.append("44")
 
 def p_uve_expresion(p):
-    'uve  : LPAREN expresion RPAREN'
+    'uve : LPAREN expresion RPAREN'
     parsero.append("45")
 
-parser = yacc.yacc(debug=True)
+parser = yacc.yacc()
 
 
 

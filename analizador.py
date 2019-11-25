@@ -19,7 +19,7 @@ arguments = argumentsParse.parse_args()
 inputFile = arguments.i
 
 # Base de la ruta
-sourceFolder = Path.home() / Path("PycharmProjects/analizador/archivos")
+sourceFolder = Path.home() / Path("PycharmProjects/PracticaPDL/archivos")
 
 # Ruta completa a archivo a analizar
 source = sourceFolder / inputFile
