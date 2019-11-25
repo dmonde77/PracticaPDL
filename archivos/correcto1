@@ -1,0 +1,23 @@
+
+var boolean resultado;
+var string cadena;
+cadena = "hola";
+/* si resul es True resta uno a mas y si es False suma uno a sum */
+
+function boolean cambio(boolean resul){
+	var int max;
+	max = 30;
+	var int sum;
+	sum = 0;
+	if(resul)
+		max = max + 1; /* resta uno a max */
+	return resul;
+}
+
+function imprime (int v)
+{
+	var int condicion;
+	condicion = 80;
+	if(condicion > v)
+		print("done");
+} 

@@ -1,0 +1,46 @@
+S' -> program
+program -> declaracionesYsentencias program
+program -> funcion program
+program -> ''
+declaracionesYsentencias -> VAR tipo ID PUNTOYCOMA
+declaracionesYsentencias -> IF LPAREN expresion RPAREN sentencia
+declaracionesYsentencias -> WHILE LPAREN expresion RPAREN LBRACE interiorFuncion RBRACE
+declaracionesYsentencias -> sentencia
+tipo -> INT
+tipo -> STRING
+tipo -> BOOLEAN
+sentencia -> ID asignacion
+sentencia -> RETURN sentenciaReturn PUNTOYCOMA
+sentencia -> PRINT LPAREN expresion RPAREN PUNTOYCOMA
+sentencia -> INPUT LPAREN ID RPAREN PUNTOYCOMA
+sentencia -> ID LPAREN argumentosLlamada RPAREN PUNTOYCOMA
+asignacion -> IGUAL expresion PUNTOYCOMA
+asignacion -> ORIGUAL expresion PUNTOYCOMA
+sentenciaReturn -> expresion
+sentenciaReturn -> ''
+argumentosLlamada -> expresion argumentosLlamadaExtra
+argumentosLlamada -> ''
+argumentosLlamadaExtra -> COMA expresion argumentosLlamadaExtra
+argumentosLlamadaExtra -> ''
+funcion -> FUNCTION declaracionArgumentos ID LPAREN argumentos RPAREN LBRACE interiorFuncion RBRACE
+declaracionArgumentos -> tipo
+declaracionArgumentos -> ''
+interiorFuncion -> declaracionesYsentencias interiorFuncion
+interiorFuncion -> ''
+argumentos -> tipo ID argumentosExtra
+argumentos -> ''
+argumentosExtra -> COMA tipo ID argumentosExtra
+argumentosExtra -> ''
+expresion -> expresion OR expresionMAYOR
+expresion -> expresionMAYOR
+expresionMAYOR -> expresionMAYOR MAYOR expresionMAS
+expresionMAYOR -> expresionMAS
+expresionMAS -> expresionMAS MAS expresionLiteral
+expresionMAS -> expresionLiteral
+expresionLiteral -> ID
+expresionLiteral -> INTEGER
+expresionLiteral -> TRUE
+expresionLiteral -> FALSE
+expresionLiteral -> CADENA
+expresionLiteral -> ID LPAREN argumentosLlamada RPAREN
+expresionLiteral -> LPAREN expresion RPARE
