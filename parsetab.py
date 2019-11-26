@@ -70,6 +70,6 @@ _lr_productions = [
   ('expresionLiteral -> TRUE','expresionLiteral',1,'p_expresionLiteral_true','Parseador.py',181),
   ('expresionLiteral -> FALSE','expresionLiteral',1,'p_expresionLiteral_false','Parseador.py',185),
   ('expresionLiteral -> CADENA','expresionLiteral',1,'p_expresionLiteral_cadena','Parseador.py',189),
-  ('expresionLiteral -> ID LPAREN argumentosLlamada RPAREN','expresionLiteral',4,'p_uve_funcion','Parseador.py',193),
-  ('expresionLiteral -> LPAREN expresion RPAREN','expresionLiteral',3,'p_uve_expresion','Parseador.py',197),
+  ('expresionLiteral -> ID LPAREN argumentosLlamada RPAREN','expresionLiteral',4,'p_expresionLiteral_llamada','Parseador.py',193),
+  ('expresionLiteral -> LPAREN expresion RPAREN','expresionLiteral',3,'p_expresionLiteral_expresion','Parseador.py',197),
 ]

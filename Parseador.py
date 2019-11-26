@@ -189,11 +189,11 @@ def p_expresionLiteral_cadena(p):
     'expresionLiteral : CADENA'
     parsero.append("43")
 
-def p_uve_funcion(p):
+def p_expresionLiteral_llamada(p):
     'expresionLiteral : ID LPAREN argumentosLlamada RPAREN'
     parsero.append("44")
 
-def p_uve_expresion(p):
+def p_expresionLiteral_expresion(p):
     'expresionLiteral : LPAREN expresion RPAREN'
     parsero.append("45")
 
