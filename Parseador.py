@@ -1,5 +1,6 @@
 import Lexeador
 import ply.yacc as yacc
+from sys import stderr
 
 # Lista de tokens (idéntica a la del analizador léxico)
 tokens = Lexeador.tokens
@@ -10,8 +11,12 @@ parsero = [ "Ascendente" ]
 # Error sintáctico
 def p_error(p):
     if p:
-        print("Error de sintaxis en la línea {}: Token ({}, '{}') inesperado".format(p.lineno, p.type.lower(), p.value.lower()))
-        exit(1)
+        stderr.write("Error de sintaxis en la línea {}: Token {} inesperado\n".format(p.lineno, Lexeador.imprimeToken(p)))
+        while True:
+            tok = parser.token()  # Get the next token
+            if not tok or tok.type == 'RBRACE':
+                break
+        parser.restart()
     else:
         print('Error de sintaxis: Se ha llegado al final del fichero')
 

@@ -111,29 +111,28 @@ def tokeniza():
 
     # Recorre la lista de tokens
     for tok in lexer:
-
-        # Es una palabra reservada, se busca su índice para cumplir con el formato de la asignatura
-        if tok.type.lower() in reserved:
-            tokenizado.append(" < palRes , {} > // palRes: {}"
-                              .format(list(reserved.values()).index(tok.value.upper()),  tok.value))
-
-        # Es un identificador, se busca su posición en la tabla de símbolos para cumplir con el formato de la asignatura
-        elif tok.type == "ID":
-            tokenizado.append(" < {} , {} > // identificador: {}"
-                              .format(tok.type, tok.value,list(tablaG.getSimbolos().keys())[int(tok.value)]))
-
-        # Es un literal
-        elif tok.type in ["CADENA", "INTEGER"]:
-            tokenizado.append(" < {} , {} >".format(tok.type, tok.value))
-
-        # Es cualquier otro token
-        else:
-            tokenizado.append(" < {} , - >".format(tok.type))
-
-        # Token tal cúal lo ve el analizador
-        #print("REAL: < {} , {} >".format(tok.type, tok.value))
+        tokenizado.append(imprimeToken(tok))
 
     return "\n".join(tokenizado)
 
+def imprimeToken(tok):
+    # Es una palabra reservada, se busca su índice para cumplir con el formato de la asignatura
+    if tok.type.lower() in reserved:
+        return " < palRes , {} > // palRes: {}".format(list(reserved.values()).index(tok.value.upper()), tok.value)
+
+    # Es un identificador, se busca su posición en la tabla de símbolos para cumplir con el formato de la asignatura
+    elif tok.type == "ID":
+        return " < {} , {} > // identificador: {}".format(tok.type, tok.value, list(tablaG.getSimbolos().keys())[int(tok.value)])
+
+    # Es un literal
+    elif tok.type in ["CADENA", "INTEGER"]:
+        return " < {} , {} >".format(tok.type, tok.value)
+
+    # Es cualquier otro token
+    else:
+        return " < {} , - >".format(tok.type)
+
+    # Token tal cúal lo ve el analizador
+    # print("REAL: < {} , {} >".format(tok.type, tok.value))
 
 lexer = lex.lex()
