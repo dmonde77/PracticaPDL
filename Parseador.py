@@ -14,7 +14,7 @@ def p_error(p):
         stderr.write("Error de sintaxis en la línea {}: Token {} inesperado\n".format(p.lineno, Lexeador.imprimeToken(p)))
         while True:
             tok = parser.token()  # Get the next token
-            if not tok or tok.type == 'RBRACE':
+            if not tok or tok.type == 'PUNTOYCOMA':
                 break
         parser.restart()
     else:
