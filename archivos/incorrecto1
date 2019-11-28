@@ -1,0 +1,9 @@
+function int suma(int tam, int min) /* sumatorio */
+{
+	var int sumatorio = 0;
+	var int i;
+	while(1){
+		sumatorio = sumatorio + i;
+	}
+	return sumatorio;
+}

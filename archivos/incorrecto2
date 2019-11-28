@@ -1,0 +1,6 @@
+factor = n;
+n = n || 134134; /* equivale a |= */
+
+while( ) {  /* es necesario que el while tenga una condiciosn */
+    return 3 + de;
+}

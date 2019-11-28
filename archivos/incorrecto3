@@ -1,0 +1,7 @@
+var = "asdfas"; /* Despues de una declaracion de variable siempre ha de ir su tipo */
+var int a;
+print ("Introduce el primer operando");
+input (a);
+print ("Introduce el segundo operando");
+input (b);
+c =  a + b;
