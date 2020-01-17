@@ -1,0 +1,25 @@
+ < palRes , 5 > // palRes: function
+ < palRes , 4 > // palRes: int
+ < ID , 0 > // identificador: letra
+ < LPAREN , - >
+ < palRes , 4 > // palRes: int
+ < ID , 1 > // identificador: numero
+ < COMA , - >
+ < palRes , 6 > // palRes: string
+ < ID , 2 > // identificador: cadena
+ < RPAREN , - >
+ < LBRACE , - >
+ < ID , 1 > // identificador: numero
+ < IGUAL , - >
+ < INTEGER , 5 >
+ < PUNTOYCOMA , - >
+ < ID , 2 > // identificador: cadena
+ < IGUAL , - >
+ < ID , 3 > // identificador: algo
+ < PUNTOYCOMA , - >
+ < palRes , 9 > // palRes: return
+ < ID , 2 > // identificador: cadena
+ < MAS , - >
+ < ID , 1 > // identificador: numero
+ < PUNTOYCOMA , - >
+ < RBRACE , - >

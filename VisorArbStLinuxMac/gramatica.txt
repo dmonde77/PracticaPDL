@@ -25,7 +25,6 @@ Terminales = {
     TRUE
     VAR
     WHILE
-    lambda
 }   
 
 NoTerminales = {

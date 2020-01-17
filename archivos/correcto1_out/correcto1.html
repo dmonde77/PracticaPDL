@@ -1,0 +1,591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+<title>Arbol</title>
+<link rel="stylesheet" href="http://www-lt.ls.fi.upm.es/procesadores/Software/VASt/jquery.treeview.css" /> 
+<link rel="stylesheet" href="http://www-lt.ls.fi.upm.es/procesadores/Software/VASt/screen.css" /> 
+<script src="http://www-lt.ls.fi.upm.es/procesadores/Software/VASt/jquery.js" type="text/javascript"></script>
+<script src="http://www-lt.ls.fi.upm.es/procesadores/Software/VASt/jquery.treeview.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="CSS.css"> 
+<style type="text/css"> 
+.filetree span.Noterminales { color: Brown;}
+.filetree span.terminales { color: Red;}
+</style>
+<script>
+$(document).ready(function(){
+$("#browser").treeview();
+});
+</script>
+</head>
+<body>
+<h4>Árbol resultado de:</h4>
+<h4>Gramática: C:\Users\dmond\PycharmProjects\PracticaPDL\VisorArbStLinuxMac\gramatica.txt</h4>
+<h4>Parse: C:\Users\dmond\PycharmProjects\PracticaPDL\archivos\correcto1_out\parser.txt</h4>
+<ul id="browser" class="filetree">
+
+<li><span class="Noterminales">program (1)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (4)</span>
+<ul>
+<li><span class="terminales">VAR</span>
+</li>
+<li><span class="Noterminales">tipo (10)</span>
+<ul>
+<li><span class="terminales">BOOLEAN</span>
+</li>
+</ul>
+</li>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">program (1)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (4)</span>
+<ul>
+<li><span class="terminales">VAR</span>
+</li>
+<li><span class="Noterminales">tipo (9)</span>
+<ul>
+<li><span class="terminales">STRING</span>
+</li>
+</ul>
+</li>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">program (1)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (7)</span>
+<ul>
+<li><span class="Noterminales">sentencia (11)</span>
+<ul>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="Noterminales">asignacion (16)</span>
+<ul>
+<li><span class="terminales">IGUAL</span>
+</li>
+<li><span class="Noterminales">expresion (34)</span>
+<ul>
+<li><span class="Noterminales">expresionMAYOR (36)</span>
+<ul>
+<li><span class="Noterminales">expresionMAS (38)</span>
+<ul>
+<li><span class="Noterminales">expresionLiteral (43)</span>
+<ul>
+<li><span class="terminales">CADENA</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">program (2)</span>
+<ul>
+<li><span class="Noterminales">funcion (24)</span>
+<ul>
+<li><span class="terminales">FUNCTION</span>
+</li>
+<li><span class="Noterminales">declaracionArgumentos (25)</span>
+<ul>
+<li><span class="Noterminales">tipo (10)</span>
+<ul>
+<li><span class="terminales">BOOLEAN</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="terminales">LPAREN</span>
+</li>
+<li><span class="Noterminales">argumentos (29)</span>
+<ul>
+<li><span class="Noterminales">tipo (10)</span>
+<ul>
+<li><span class="terminales">BOOLEAN</span>
+</li>
+</ul>
+</li>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="Noterminales">argumentosExtra (32)</span>
+<ul>
+<li><span class="terminales">lambda</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">RPAREN</span>
+</li>
+<li><span class="terminales">LBRACE</span>
+</li>
+<li><span class="Noterminales">interiorFuncion (27)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (4)</span>
+<ul>
+<li><span class="terminales">VAR</span>
+</li>
+<li><span class="Noterminales">tipo (8)</span>
+<ul>
+<li><span class="terminales">INT</span>
+</li>
+</ul>
+</li>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">interiorFuncion (27)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (7)</span>
+<ul>
+<li><span class="Noterminales">sentencia (11)</span>
+<ul>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="Noterminales">asignacion (16)</span>
+<ul>
+<li><span class="terminales">IGUAL</span>
+</li>
+<li><span class="Noterminales">expresion (34)</span>
+<ul>
+<li><span class="Noterminales">expresionMAYOR (36)</span>
+<ul>
+<li><span class="Noterminales">expresionMAS (38)</span>
+<ul>
+<li><span class="Noterminales">expresionLiteral (40)</span>
+<ul>
+<li><span class="terminales">INTEGER</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">interiorFuncion (27)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (4)</span>
+<ul>
+<li><span class="terminales">VAR</span>
+</li>
+<li><span class="Noterminales">tipo (8)</span>
+<ul>
+<li><span class="terminales">INT</span>
+</li>
+</ul>
+</li>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">interiorFuncion (27)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (7)</span>
+<ul>
+<li><span class="Noterminales">sentencia (11)</span>
+<ul>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="Noterminales">asignacion (16)</span>
+<ul>
+<li><span class="terminales">IGUAL</span>
+</li>
+<li><span class="Noterminales">expresion (34)</span>
+<ul>
+<li><span class="Noterminales">expresionMAYOR (36)</span>
+<ul>
+<li><span class="Noterminales">expresionMAS (38)</span>
+<ul>
+<li><span class="Noterminales">expresionLiteral (40)</span>
+<ul>
+<li><span class="terminales">INTEGER</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">interiorFuncion (27)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (5)</span>
+<ul>
+<li><span class="terminales">IF</span>
+</li>
+<li><span class="terminales">LPAREN</span>
+</li>
+<li><span class="Noterminales">expresion (34)</span>
+<ul>
+<li><span class="Noterminales">expresionMAYOR (36)</span>
+<ul>
+<li><span class="Noterminales">expresionMAS (38)</span>
+<ul>
+<li><span class="Noterminales">expresionLiteral (39)</span>
+<ul>
+<li><span class="terminales">ID</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">RPAREN</span>
+</li>
+<li><span class="Noterminales">sentencia (11)</span>
+<ul>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="Noterminales">asignacion (16)</span>
+<ul>
+<li><span class="terminales">IGUAL</span>
+</li>
+<li><span class="Noterminales">expresion (34)</span>
+<ul>
+<li><span class="Noterminales">expresionMAYOR (36)</span>
+<ul>
+<li><span class="Noterminales">expresionMAS (37)</span>
+<ul>
+<li><span class="Noterminales">expresionMAS (38)</span>
+<ul>
+<li><span class="Noterminales">expresionLiteral (39)</span>
+<ul>
+<li><span class="terminales">ID</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">MAS</span>
+</li>
+<li><span class="Noterminales">expresionLiteral (40)</span>
+<ul>
+<li><span class="terminales">INTEGER</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">interiorFuncion (27)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (7)</span>
+<ul>
+<li><span class="Noterminales">sentencia (12)</span>
+<ul>
+<li><span class="terminales">RETURN</span>
+</li>
+<li><span class="Noterminales">sentenciaReturn (18)</span>
+<ul>
+<li><span class="Noterminales">expresion (34)</span>
+<ul>
+<li><span class="Noterminales">expresionMAYOR (36)</span>
+<ul>
+<li><span class="Noterminales">expresionMAS (38)</span>
+<ul>
+<li><span class="Noterminales">expresionLiteral (39)</span>
+<ul>
+<li><span class="terminales">ID</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">interiorFuncion (28)</span>
+<ul>
+<li><span class="terminales">lambda</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">RBRACE</span>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">program (2)</span>
+<ul>
+<li><span class="Noterminales">funcion (24)</span>
+<ul>
+<li><span class="terminales">FUNCTION</span>
+</li>
+<li><span class="Noterminales">declaracionArgumentos (26)</span>
+<ul>
+<li><span class="terminales">lambda</span>
+</li>
+</ul>
+</li>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="terminales">LPAREN</span>
+</li>
+<li><span class="Noterminales">argumentos (29)</span>
+<ul>
+<li><span class="Noterminales">tipo (8)</span>
+<ul>
+<li><span class="terminales">INT</span>
+</li>
+</ul>
+</li>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="Noterminales">argumentosExtra (32)</span>
+<ul>
+<li><span class="terminales">lambda</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">RPAREN</span>
+</li>
+<li><span class="terminales">LBRACE</span>
+</li>
+<li><span class="Noterminales">interiorFuncion (27)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (4)</span>
+<ul>
+<li><span class="terminales">VAR</span>
+</li>
+<li><span class="Noterminales">tipo (8)</span>
+<ul>
+<li><span class="terminales">INT</span>
+</li>
+</ul>
+</li>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">interiorFuncion (27)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (7)</span>
+<ul>
+<li><span class="Noterminales">sentencia (11)</span>
+<ul>
+<li><span class="terminales">ID</span>
+</li>
+<li><span class="Noterminales">asignacion (16)</span>
+<ul>
+<li><span class="terminales">IGUAL</span>
+</li>
+<li><span class="Noterminales">expresion (34)</span>
+<ul>
+<li><span class="Noterminales">expresionMAYOR (36)</span>
+<ul>
+<li><span class="Noterminales">expresionMAS (38)</span>
+<ul>
+<li><span class="Noterminales">expresionLiteral (40)</span>
+<ul>
+<li><span class="terminales">INTEGER</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">interiorFuncion (27)</span>
+<ul>
+<li><span class="Noterminales">declaracionesYsentencias (5)</span>
+<ul>
+<li><span class="terminales">IF</span>
+</li>
+<li><span class="terminales">LPAREN</span>
+</li>
+<li><span class="Noterminales">expresion (34)</span>
+<ul>
+<li><span class="Noterminales">expresionMAYOR (35)</span>
+<ul>
+<li><span class="Noterminales">expresionMAYOR (36)</span>
+<ul>
+<li><span class="Noterminales">expresionMAS (38)</span>
+<ul>
+<li><span class="Noterminales">expresionLiteral (39)</span>
+<ul>
+<li><span class="terminales">ID</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">MAYOR</span>
+</li>
+<li><span class="Noterminales">expresionMAS (38)</span>
+<ul>
+<li><span class="Noterminales">expresionLiteral (39)</span>
+<ul>
+<li><span class="terminales">ID</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">RPAREN</span>
+</li>
+<li><span class="Noterminales">sentencia (13)</span>
+<ul>
+<li><span class="terminales">PRINT</span>
+</li>
+<li><span class="terminales">LPAREN</span>
+</li>
+<li><span class="Noterminales">expresion (34)</span>
+<ul>
+<li><span class="Noterminales">expresionMAYOR (36)</span>
+<ul>
+<li><span class="Noterminales">expresionMAS (38)</span>
+<ul>
+<li><span class="Noterminales">expresionLiteral (43)</span>
+<ul>
+<li><span class="terminales">CADENA</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">RPAREN</span>
+</li>
+<li><span class="terminales">PUNTOYCOMA</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">interiorFuncion (28)</span>
+<ul>
+<li><span class="terminales">lambda</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span class="terminales">RBRACE</span>
+</li>
+</ul>
+</li>
+<li><span class="Noterminales">program (3)</span>
+<ul>
+<li><span class="terminales">lambda</span>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>

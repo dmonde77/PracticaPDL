@@ -1,0 +1,5 @@
+function int letra(int numero, string cadena){
+	numero = 5;
+	cadena ='algo';
+	return cadena + numero;
+}

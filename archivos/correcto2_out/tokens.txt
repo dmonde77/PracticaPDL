@@ -1,0 +1,42 @@
+ < palRes , 5 > // palRes: function
+ < palRes , 4 > // palRes: int
+ < ID , 0 > // identificador: FactorialRecursivo
+ < LPAREN , - >
+ < palRes , 4 > // palRes: int
+ < ID , 1 > // identificador: n
+ < RPAREN , - >
+ < LBRACE , - >
+ < palRes , 3 > // palRes: var
+ < palRes , 7 > // palRes: boolean
+ < ID , 2 > // identificador: mostlikelytobefalse
+ < PUNTOYCOMA , - >
+ < ID , 2 > // identificador: mostlikelytobefalse
+ < IGUAL , - >
+ < palRes , 11 > // palRes: false
+ < PUNTOYCOMA , - >
+ < palRes , 3 > // palRes: var
+ < palRes , 7 > // palRes: boolean
+ < ID , 3 > // identificador: mostlikelytobetrue
+ < PUNTOYCOMA , - >
+ < ID , 3 > // identificador: mostlikelytobetrue
+ < IGUAL , - >
+ < palRes , 11 > // palRes: false
+ < PUNTOYCOMA , - >
+ < palRes , 8 > // palRes: if
+ < LPAREN , - >
+ < ID , 1 > // identificador: n
+ < OR , - >
+ < INTEGER , 0 >
+ < RPAREN , - >
+ < palRes , 9 > // palRes: return
+ < INTEGER , 1 >
+ < PUNTOYCOMA , - >
+ < palRes , 9 > // palRes: return
+ < ID , 0 > // identificador: FactorialRecursivo
+ < LPAREN , - >
+ < ID , 1 > // identificador: n
+ < MAS , - >
+ < INTEGER , 1 >
+ < RPAREN , - >
+ < PUNTOYCOMA , - >
+ < RBRACE , - >

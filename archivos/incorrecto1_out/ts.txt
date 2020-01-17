@@ -1,0 +1,6 @@
+Tabla de símbolos # 0 :
+	 * LEXEMA : 'suma'
+	 * LEXEMA : 'tam'
+	 * LEXEMA : 'min'
+	 * LEXEMA : 'sumatorio'
+	 * LEXEMA : 'i'

@@ -1,0 +1,6 @@
+Tabla de símbolos # 0 :
+	 * LEXEMA : 'num'
+	 * LEXEMA : 'x'
+	 * LEXEMA : 'suma'
+	 * LEXEMA : 'res'
+	 * LEXEMA : 'cosa'

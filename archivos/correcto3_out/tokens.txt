@@ -1,0 +1,34 @@
+ < palRes , 3 > // palRes: var
+ < palRes , 4 > // palRes: int
+ < ID , 0 > // identificador: factorial
+ < PUNTOYCOMA , - >
+ < ID , 0 > // identificador: factorial
+ < IGUAL , - >
+ < INTEGER , 0 >
+ < PUNTOYCOMA , - >
+ < palRes , 2 > // palRes: print
+ < LPAREN , - >
+ < CADENA , "cadenacomsimple" >
+ < RPAREN , - >
+ < PUNTOYCOMA , - >
+ < palRes , 8 > // palRes: if
+ < LPAREN , - >
+ < ID , 1 > // identificador: cosa1
+ < MAYOR , - >
+ < ID , 2 > // identificador: cosa2
+ < RPAREN , - >
+ < ID , 3 > // identificador: n
+ < IGUAL , - >
+ < ID , 3 > // identificador: n
+ < MAS , - >
+ < INTEGER , 134134 >
+ < PUNTOYCOMA , - >
+ < palRes , 0 > // palRes: while
+ < LPAREN , - >
+ < palRes , 10 > // palRes: true
+ < RPAREN , - >
+ < LBRACE , - >
+ < RBRACE , - >
+ < palRes , 9 > // palRes: return
+ < ID , 0 > // identificador: factorial
+ < PUNTOYCOMA , - >

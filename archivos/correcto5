@@ -1,0 +1,9 @@
+var int num;
+var int x;
+x = 30;
+function int suma(int res) {
+    if(num > cosa)
+        res = cosa+ num;
+
+    return res;
+}

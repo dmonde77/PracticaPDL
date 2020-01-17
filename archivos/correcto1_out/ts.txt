@@ -1,4 +1,4 @@
-Tabla de sÃ­mbolos # 0 :
+Tabla de símbolos # 0 :
 	 * LEXEMA : 'resultado'
 	 * LEXEMA : 'cadena'
 	 * LEXEMA : 'cambio'

@@ -1,0 +1,4 @@
+Tabla de símbolos # 0 :
+	 * LEXEMA : 'factor'
+	 * LEXEMA : 'n'
+	 * LEXEMA : 'de'

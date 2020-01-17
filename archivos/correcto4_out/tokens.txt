@@ -1,0 +1,41 @@
+ < palRes , 3 > // palRes: var
+ < palRes , 4 > // palRes: int
+ < ID , 0 > // identificador: sum
+ < PUNTOYCOMA , - >
+ < palRes , 3 > // palRes: var
+ < palRes , 4 > // palRes: int
+ < ID , 1 > // identificador: aux
+ < PUNTOYCOMA , - >
+ < palRes , 5 > // palRes: function
+ < palRes , 7 > // palRes: boolean
+ < ID , 2 > // identificador: exchange
+ < LPAREN , - >
+ < palRes , 4 > // palRes: int
+ < ID , 3 > // identificador: res
+ < COMA , - >
+ < palRes , 7 > // palRes: boolean
+ < ID , 4 > // identificador: in
+ < RPAREN , - >
+ < LBRACE , - >
+ < ID , 1 > // identificador: aux
+ < IGUAL , - >
+ < palRes , 10 > // palRes: true
+ < PUNTOYCOMA , - >
+ < ID , 0 > // identificador: sum
+ < IGUAL , - >
+ < INTEGER , 20 >
+ < PUNTOYCOMA , - >
+ < palRes , 8 > // palRes: if
+ < LPAREN , - >
+ < ID , 3 > // identificador: res
+ < MAYOR , - >
+ < ID , 0 > // identificador: sum
+ < RPAREN , - >
+ < ID , 1 > // identificador: aux
+ < IGUAL , - >
+ < palRes , 11 > // palRes: false
+ < PUNTOYCOMA , - >
+ < palRes , 9 > // palRes: return
+ < ID , 1 > // identificador: aux
+ < PUNTOYCOMA , - >
+ < RBRACE , - >

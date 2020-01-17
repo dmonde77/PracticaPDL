@@ -1,0 +1,13 @@
+function int sumaMal() {
+    var int num;
+    num = "hello";
+
+    var string cad;
+    cad = 45;
+
+    var boolean res;
+    res = true;
+
+    if (cad > num)
+        res = false;
+}

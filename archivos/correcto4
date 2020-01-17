@@ -1,0 +1,11 @@
+
+var int sum;
+var int aux;
+
+function boolean exchange(int res, boolean in){
+	aux = true;
+	sum = 20;
+	if(res > sum)
+		aux = false;
+    return aux;
+}

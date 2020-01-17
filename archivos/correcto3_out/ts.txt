@@ -1,0 +1,5 @@
+Tabla de símbolos # 0 :
+	 * LEXEMA : 'factorial'
+	 * LEXEMA : 'cosa1'
+	 * LEXEMA : 'cosa2'
+	 * LEXEMA : 'n'

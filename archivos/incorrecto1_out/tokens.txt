@@ -1,0 +1,37 @@
+ < palRes , 5 > // palRes: function
+ < palRes , 4 > // palRes: int
+ < ID , 0 > // identificador: suma
+ < LPAREN , - >
+ < palRes , 4 > // palRes: int
+ < ID , 1 > // identificador: tam
+ < COMA , - >
+ < palRes , 4 > // palRes: int
+ < ID , 2 > // identificador: min
+ < RPAREN , - >
+ < LBRACE , - >
+ < palRes , 3 > // palRes: var
+ < palRes , 4 > // palRes: int
+ < ID , 3 > // identificador: sumatorio
+ < IGUAL , - >
+ < INTEGER , 0 >
+ < PUNTOYCOMA , - >
+ < palRes , 3 > // palRes: var
+ < palRes , 4 > // palRes: int
+ < ID , 4 > // identificador: i
+ < PUNTOYCOMA , - >
+ < palRes , 0 > // palRes: while
+ < LPAREN , - >
+ < INTEGER , 1 >
+ < RPAREN , - >
+ < LBRACE , - >
+ < ID , 3 > // identificador: sumatorio
+ < IGUAL , - >
+ < ID , 3 > // identificador: sumatorio
+ < MAS , - >
+ < ID , 4 > // identificador: i
+ < PUNTOYCOMA , - >
+ < RBRACE , - >
+ < palRes , 9 > // palRes: return
+ < ID , 3 > // identificador: sumatorio
+ < PUNTOYCOMA , - >
+ < RBRACE , - >

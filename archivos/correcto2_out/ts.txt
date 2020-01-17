@@ -1,0 +1,5 @@
+Tabla de símbolos # 0 :
+	 * LEXEMA : 'FactorialRecursivo'
+	 * LEXEMA : 'n'
+	 * LEXEMA : 'mostlikelytobefalse'
+	 * LEXEMA : 'mostlikelytobetrue'

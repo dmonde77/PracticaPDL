@@ -1,0 +1,20 @@
+ < ID , 0 > // identificador: factor
+ < IGUAL , - >
+ < ID , 1 > // identificador: n
+ < PUNTOYCOMA , - >
+ < ID , 1 > // identificador: n
+ < IGUAL , - >
+ < ID , 1 > // identificador: n
+ < OR , - >
+ < INTEGER , 134134 >
+ < PUNTOYCOMA , - >
+ < palRes , 0 > // palRes: while
+ < LPAREN , - >
+ < RPAREN , - >
+ < LBRACE , - >
+ < palRes , 9 > // palRes: return
+ < INTEGER , 3 >
+ < MAS , - >
+ < ID , 2 > // identificador: de
+ < PUNTOYCOMA , - >
+ < RBRACE , - >

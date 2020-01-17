@@ -1,0 +1,5 @@
+Tabla de símbolos # 0 :
+	 * LEXEMA : 'sumaMal'
+	 * LEXEMA : 'num'
+	 * LEXEMA : 'cad'
+	 * LEXEMA : 'res'
